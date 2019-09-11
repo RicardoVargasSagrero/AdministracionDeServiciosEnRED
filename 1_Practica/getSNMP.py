@@ -14,10 +14,15 @@ def consultaSNMP(comunidad,host,oid):
         resultado = str(errorIndication)
     elif errorStatus:
         resultado = '%s at %s' % (errorStatus.prettyPrint(),errorIndex and varBinds[int(errorIndex) - 1][0] or '?')
+    elif errorIndex:
+        resultado = str(errorIndex)
     else:
-        for varBind in varBinds:
-            varB=(' = '.join([x.prettyPrint() for x in varBind]))
-            resultado= varB .split()[2]
+        try:
+            for varBind in varBinds:
+                varB = (' = '.join([x.prettyPrint() for x in varBind]))
+                resultado = varB.split()[2]
+        except IndexError as error:
+            resultado = "No encontrado"
     return resultado
 
 

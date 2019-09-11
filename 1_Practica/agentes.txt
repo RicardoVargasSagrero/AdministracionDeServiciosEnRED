@@ -3,7 +3,7 @@ nombre =comunidad4cm3
 direccion =localhost
 #Agente 2
 nombre =4cm3
-direccion =192.168.1.103
+direccion =192.168.100.27
 #Agente 3
 nombre =acarrillo
 direccion =192.168.1.104
