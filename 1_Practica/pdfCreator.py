@@ -10,7 +10,7 @@ def numeroInterfaces(comunidadSNMP, host):
         result = consultaSNMP(comunidadSNMP, host, oid)
     return idTable
 
-def crearPDF(comunidadSNMP, host):
+def crearPDF(comunidadSNMP, host,num):
     # ORDEN de PDF nombre, versión y logo del sistema operativo, la ubicación geográfica, el número de puertos,
     # el tiempo de actividad desde el último reinicio, comunidad, IP
     SO = consultaSNMP(comunidadSNMP, host, "1.3.6.1.2.1.1.1.0")
@@ -37,10 +37,16 @@ def crearPDF(comunidadSNMP, host):
         pdf.image("ubuntu.png", x=150, y=25, w=50, h=20)
     else:
         pdf.image("mac.png", x=150, y=25, w=50, h=20)
-    pdf.image("traficoREDMulticast.png", x=10, y=65, w=95, h=40)
-    pdf.output("prueba.pdf")
+    pdf.image("Multicast_paquetes_"+str(num)+".png", x=10, y=75, w=95, h=40)
+    pdf.image("IP_paquetes_"+str(num)+".png", x=110, y=75, w=95, h=40)
+    pdf.image("ICMP_mensajes_"+str(num)+".png", x=10, y=125, w=95, h=40)
+    pdf.image("TCP_segmentos_"+str(num)+".png", x=110, y=125, w=95, h=40)
+    pdf.image("UDP_datagramas_"+str(num)+".png",x=50, y=200, w=95, h=40)
+    pdf.output("prueba"+str(SO)+"_Agente_"+str(num)+".pdf")
+    print("prueba"+str(SO)+"_Agente_"+str(num)+".pdf")
 
-print("Inicio de creacion de PDF")
-comSNMP = "4cm3"
-host = "192.168.100.27"
-crearPDF(comSNMP, host)
+#print("Inicio de creacion de PDF")
+#comSNMP = "comunidad4cm3"
+#host = "localhost"
+#crearPDF(comSNMP, host)
+# MODIFICACION EN EL NOMBRE DE SALIDA

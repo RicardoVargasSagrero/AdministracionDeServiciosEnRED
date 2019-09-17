@@ -4,7 +4,7 @@
 <rrd>
 	<version>0003</version>
 	<step>60</step> <!-- Seconds -->
-	<lastupdate>1568187225</lastupdate> <!-- 2019-09-11 02:33:45 CDT -->
+	<lastupdate>1568187322</lastupdate> <!-- 2019-09-11 02:35:22 CDT -->
 
 	<ds>
 		<name> inoctets </name>
@@ -14,8 +14,8 @@
 		<max>NaN</max>
 
 		<!-- PDP Status -->
-		<last_ds>2418848192</last_ds>
-		<value>3.8600000000e+03</value>
+		<last_ds>2418866806</last_ds>
+		<value>1.1763612010e+03</value>
 		<unknown_sec> 0 </unknown_sec>
 	</ds>
 
@@ -29,15 +29,13 @@
 		</params>
 		<cdp_prep>
 			<ds>
-			<primary_value>1.7195000000e+02</primary_value>
+			<primary_value>2.7304397998e+02</primary_value>
 			<secondary_value>0.0000000000e+00</secondary_value>
 			<value>NaN</value>
 			<unknown_datapoints>0</unknown_datapoints>
 			</ds>
 		</cdp_prep>
 		<database>
-			<!-- 2019-09-10 16:34:00 CDT / 1568151240 --> <row><v>NaN</v></row>
-			<!-- 2019-09-10 16:35:00 CDT / 1568151300 --> <row><v>NaN</v></row>
 			<!-- 2019-09-10 16:36:00 CDT / 1568151360 --> <row><v>NaN</v></row>
 			<!-- 2019-09-10 16:37:00 CDT / 1568151420 --> <row><v>NaN</v></row>
 			<!-- 2019-09-10 16:38:00 CDT / 1568151480 --> <row><v>NaN</v></row>
@@ -636,6 +634,8 @@
 			<!-- 2019-09-11 02:31:00 CDT / 1568187060 --> <row><v>5.8035646771e+02</v></row>
 			<!-- 2019-09-11 02:32:00 CDT / 1568187120 --> <row><v>9.6016019896e+02</v></row>
 			<!-- 2019-09-11 02:33:00 CDT / 1568187180 --> <row><v>1.7195000000e+02</v></row>
+			<!-- 2019-09-11 02:34:00 CDT / 1568187240 --> <row><v>8.1916666667e+01</v></row>
+			<!-- 2019-09-11 02:35:00 CDT / 1568187300 --> <row><v>2.7304397998e+02</v></row>
 		</database>
 	</rra>
 </rrd>

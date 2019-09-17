@@ -1,9 +1,6 @@
 #Agente 1
-nombre =comunidad4cm3
+nombre =ricardovargassagrero
 direccion =localhost
 #Agente 2
-nombre =4cm3
+nombre =ricardovargassagrero
 direccion =192.168.100.27
-#Agente 3
-nombre =acarrillo
-direccion =192.168.1.104
