@@ -3,4 +3,4 @@ nombre =ricardovargassagrero
 direccion =localhost
 #Agente 2
 nombre =ricardovargassagrero
-direccion =192.168.100.27
+direccion =192.168.1.106
